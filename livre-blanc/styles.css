@@ -84,119 +84,6 @@ a {
   text-decoration: none;
 }
 
-body.is-password-locked {
-  overflow: hidden;
-}
-
-body.is-password-locked .page-shell,
-body.is-password-locked .sticky-cta {
-  visibility: hidden;
-  pointer-events: none;
-  user-select: none;
-}
-
-.password-gate {
-  position: fixed;
-  inset: 0;
-  display: none;
-  place-items: center;
-  padding: clamp(1rem, 3vw, 2rem);
-  background:
-    radial-gradient(circle at top left, rgba(32, 46, 102, 0.16), transparent 34%),
-    radial-gradient(circle at 82% 18%, rgba(220, 222, 231, 0.92), transparent 26%),
-    linear-gradient(180deg, rgba(238, 241, 248, 0.98), rgba(246, 247, 251, 0.99));
-  z-index: 50;
-}
-
-body.is-password-locked .password-gate {
-  display: grid;
-}
-
-.password-gate__panel {
-  width: min(100%, 30rem);
-  padding: clamp(1.4rem, 4vw, 2.2rem);
-  border-radius: calc(var(--radius-lg) + 0.25rem);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72)),
-    linear-gradient(160deg, rgba(220, 222, 231, 0.58), rgba(243, 214, 225, 0.18));
-  border: 1px solid rgba(15, 23, 78, 0.09);
-  box-shadow:
-    0 26px 60px rgba(15, 23, 78, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-.password-gate__eyebrow {
-  margin: 0 0 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--rose-deep);
-}
-
-.password-gate__title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 4.4vw, 3rem);
-  line-height: 0.98;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-.password-gate__body {
-  margin: 0.85rem 0 0;
-  font-size: 0.98rem;
-  line-height: 1.6;
-  color: color-mix(in srgb, var(--ink) 88%, var(--white));
-}
-
-.password-gate__form {
-  display: grid;
-  gap: 0.75rem;
-  margin-top: 1.35rem;
-}
-
-.password-gate__label {
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-}
-
-.password-gate__input {
-  width: 100%;
-  min-width: 0;
-  padding: 0.95rem 1rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(15, 23, 78, 0.14);
-  background: rgba(255, 255, 255, 0.9);
-  font: inherit;
-  color: var(--ink);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86);
-}
-
-.password-gate__input:focus-visible {
-  outline: none;
-  border-color: rgba(170, 29, 78, 0.55);
-  box-shadow:
-    0 0 0 0.22rem rgba(170, 29, 78, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.86);
-}
-
-.password-gate__submit {
-  width: 100%;
-  justify-content: center;
-}
-
-.password-gate__status {
-  min-height: 1.25rem;
-  margin: 0;
-  font-size: 0.84rem;
-  font-weight: 700;
-  color: var(--rose-deep);
-}
-
 .page-shell {
   position: relative;
   isolation: isolate;
@@ -1174,15 +1061,6 @@ body.is-password-locked .password-gate {
 }
 
 @media (max-width: 640px) {
-  .password-gate__panel {
-    padding: 1.2rem;
-    border-radius: 1.5rem;
-  }
-
-  .password-gate__title {
-    font-size: clamp(1.75rem, 8vw, 2.35rem);
-  }
-
   .container {
     width: min(var(--max-width), calc(100% - 1rem));
   }
