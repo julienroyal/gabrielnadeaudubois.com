@@ -758,7 +758,7 @@ body.is-password-locked .password-gate {
   overflow: hidden;
   isolation: isolate;
   background-color: #dbd8df;
-  background-image: url("separator livre blanc.png");
+  background-image: url("separator-livre-blanc.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
